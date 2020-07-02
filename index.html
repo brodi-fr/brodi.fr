@@ -8,6 +8,7 @@
 <meta property="og:description" content="Brodi.fr html { width:100%; height:100%; background:url(http://brodi.fr/brodi.fr-logo.png) center center no-repeat; } | Hand Embroidered Graffiti" />
 <meta property="og:url" content="http://brodi.fr" />
 <meta property="og:site_name" content="Brodi" />
+<script src="https://use.fontawesome.com/5388a324ec.js"></script>
 <style>
 body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -33,25 +34,39 @@ span.circle img {
 
 .gridheader {
   width: 963px;
-  height: 182px;
-  margin: 0 auto;
+  height: 178px;
+  margin: 14px auto;
 }
 
 .gridleft {
   float: left;
   width: 150px;
+  height: 150px;
   padding: 14px 85px;
 }
 
-.gridright {
-  display: flex;
-  height: 100%;
+.gridcenter {
+  display: inline-flex;
+  width: 511px;
+  height: 150px;
   padding: 14px;
 }
 
 .desc {
   align-self: flex-end;
-  padding-bottom: 32px;
+}
+
+.gridright {
+  float: right;
+  width: 76px;
+  height: 150px;
+  padding: 14px;
+}
+
+ul {
+  float: right;
+  margin-top: 0px;
+  margin-right: -14px;
 }
 
 h1 {
@@ -76,6 +91,54 @@ h2 {
 	width: 293px;
 }
 
+
+.list-unstyled {
+	list-style: none;
+}
+/*---- Genral classes end -------*/
+
+/*Change icons size here*/
+.social-icons .fa {
+	font-size: 1.8em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fa {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fa{ 
+	border-radius: 50%;
+}
+.social-icons.icon-rounded .fa{
+	border-radius:5px;
+}
+.social-icons.icon-flat .fa{
+	border-radius: 0;
+}
+
+.social-icons .fa:hover, .social-icons .fa:active {
+	color: #444;
+}
+.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active { 
+ 	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2); 
+}
+
+.social-icons .fa-instagram{color:#AAA;}
+
 </style>
 </head>
 
@@ -87,12 +150,17 @@ h2 {
 			<img alt="brodi_fr&#39;s profile picture" class="_6q-tv" data-testid="user-avatar" draggable="false" src="https://scontent-cdg2-1.cdninstagram.com/v/t51.2885-19/s320x320/12748195_1755202154762032_482815324_a.jpg?_nc_ht=scontent-cdg2-1.cdninstagram.com&_nc_ohc=NdOIW8NR2eEAX-QwFCG&oh=a8290e9d3d665de7e5375f283767c129&oe=5F28806D">
 		</span>
 	</div>
-	<div class="gridright">
+	<div class="gridcenter">
 		<div class="desc">
 			<h2>brodi_fr</h2>
 			<h1>contact@brodi.fr</h1>
 			<span>Hand Embroidered Graffiti . Paris . 🇫🇷</span>
 		</div>
+	</div>
+	<div class="gridright">
+	  	<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline"> 
+	      <li> <a href="https://www.instagram.com/brodi_fr" target=_blank><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+	  	</ul>
 	</div>
 </div>
 
